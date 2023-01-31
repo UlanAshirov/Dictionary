@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/mainPagerFragment2">
+
+    <dialog
+        android:id="@+id/detailWordBottomSheetFragment"
+        android:name="com.uli.main.presentation.ui.fragments.main.word.detail.DetailWordBottomSheetFragment"
+        android:label="DetailWordBottomSheetFragment">
+
+        <argument
+            android:name="wordId"
+            android:defaultValue="0"
+            app:argType="integer" />
+
+        <argument
+            android:name="isLocal"
+            android:defaultValue="true"
+            app:argType="boolean" />
+
+    </dialog>
+
+    <fragment
+        android:id="@+id/addWordFragment"
+        android:name="com.uli.main.presentation.ui.fragments.addword.AddWordFragment"
+        android:label="AddWordFragment" />
+
+    <fragment
+        android:id="@+id/mainPagerFragment2"
+        android:name="com.uli.main.presentation.ui.fragments.main.MainPagerFragment"
+        android:label="MainPagerFragment">
+
+        <action
+            android:id="@+id/action_mainPagerFragment2_to_detailWordBottomSheetFragment"
+            app:destination="@id/detailWordBottomSheetFragment">
+
+            <argument
+                android:name="wordId"
+                app:argType="integer" />
+
+            <argument
+                android:name="isLocal"
+                app:argType="boolean" />
+        </action>
+
+        <action
+            android:id="@+id/action_mainPagerFragment2_to_addWordFragment"
+            app:destination="@id/addWordFragment" />
+    </fragment>
+
+</navigation>

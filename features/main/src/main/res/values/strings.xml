@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="detail_title">\"Казанбаш\"</string>
+    <string name="title">Введите слово</string>
+    <string name="description">Введите пояснение</string>
+    <string name="phone">Номер телефона</string>
+    <string name="add">Добавить</string>
+    <string name="tv_main_layout">Главный экран</string>
+</resources>

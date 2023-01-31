@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"
+        android:text="Сленг на рассмотрении. Если сленг зынк, то мы его добавим, если нет, то без обид"
+        android:textColor="@color/black" />
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#888484"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ок"
+        android:gravity="center"
+        android:layout_margin="12dp"
+        android:textColor="#4E9DDC"
+        android:textSize="18sp"
+        android:id="@+id/btn_ok"/>
+</LinearLayout>
